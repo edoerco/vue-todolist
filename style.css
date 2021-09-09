@@ -49,11 +49,21 @@ li {
     display: flex;
     justify-content: space-between;
     /* border-bottom: 1px solid lightgrey; */
-    padding: 10px;
     border-radius: 20px;
     margin-bottom: 10px;
     color: white;
     font-weight: 500;
+}
+
+.elenco li > span {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+li i {
+    padding: 10px;
 }
 
 .red {

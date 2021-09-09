@@ -27,8 +27,8 @@
         <div class="elenco">
             <ul v-if="toDos.length > 0">
                 <!-- quando done = true deve essere verde; quando done = false deve essere rosso  -->
-                <li :class="(todo.done == false) ? red : green" v-for='(todo, index) in toDos' @click="changeColor(todo, index)">
-                    <span>{{todo.titolo}}</span>
+                <li :class="(todo.done == false) ? red : green" v-for='(todo, index) in toDos' >
+                    <span @click="changeColor( index)">{{todo.titolo}}</span>
                     <i class="fas fa-times" @click="removeToDo(index)"></i>
                 </li>
             </ul>

@@ -55,8 +55,9 @@ const app = new Vue({
                 this.toDos.splice(index, 1);
             },
             // Al click su un <li> potremo infine modificare la proprietà done, portandola a false se era precedentemente a true e viceversa.
-            changeColor(e, i) {
+            changeColor( i) {
                 this.toDos[i].done = !this.toDos[i].done;
+
             }
     }
 })
